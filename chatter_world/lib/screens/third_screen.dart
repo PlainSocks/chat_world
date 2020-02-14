@@ -7,18 +7,18 @@ class ThirdScreen extends StatelessWidget {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        color:Colors.grey,
+        color:Colors.orange,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'This is the second screen :)',
+              'This is the third screen :)',
               style: TextStyle(
                 color: Colors.white,
               ),
             ),
-            RaisedButton(
-                child: Text('next screen'),
+            FlatButton(
+                child: Text('Go back'),
                 onPressed: () {
                  Navigator.pop(context);
                 }),

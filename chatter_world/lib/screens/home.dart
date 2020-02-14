@@ -1,5 +1,7 @@
 import 'package:chatter_world/screens/second_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:chatter_world/screens/third_screen.dart';
+
 
 class Home extends StatelessWidget {
   @override
@@ -25,6 +27,16 @@ class Home extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => SecondScreen(),
+                    ),
+                  );
+                }),
+                RaisedButton(
+                child: Icon(Icons.backspace),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ThirdScreen(),
                     ),
                   );
                 }),
